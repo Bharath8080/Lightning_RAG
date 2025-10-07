@@ -9,7 +9,14 @@ from langchain_groq import ChatGroq
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
+from arize.otel import register
+from openinference.instrumentation.langchain import LangChainInstrumentor
 
+tracer_provider = register(
+    space_id=os.getenv("ARIZE_SPACE_ID"),
+    api_key=os.getenv("ARIZE_API_KEY"),
+    project_name="TypesenseRAG"
+)
 # Load .env
 load_dotenv()
 
