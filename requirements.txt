@@ -1,0 +1,6 @@
+langchain-cohere
+langchain-groq
+streamlit
+python-dotenv
+langchain-community
+typesense
