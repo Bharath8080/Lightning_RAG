@@ -5,3 +5,8 @@ python-dotenv
 langchain-community
 typesense
 pypdf
+openinference-instrumentation-langchain 
+langchain 
+arize-otel 
+opentelemetry-sdk 
+opentelemetry-exporter-otlp
