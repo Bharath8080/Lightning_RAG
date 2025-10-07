@@ -13,9 +13,9 @@ from arize.otel import register
 from openinference.instrumentation.langchain import LangChainInstrumentor
 
 tracer_provider = register(
-    space_id=os.getenv("ARIZE_SPACE_ID"),
-    api_key=os.getenv("ARIZE_API_KEY"),
-    project_name="TypesenseRAG"
+    space_id="U3BhY2U6MjU3OTA6bXNxVA==",  
+    api_key="ak-04ff1017-e4e7-47f4-893c-499d6bac22f8-mVLKZOhNZhkEMvvNTx8YkO-Kz5BdHike",
+    project_name="LightiningRAG"
 )
 # Load .env
 load_dotenv()
